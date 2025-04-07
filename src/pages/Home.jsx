@@ -5,11 +5,17 @@ import 'swiper/css/navigation';
 import useFetch from "../hooks/useFetch";
 import './Home.css'
 import { Autoplay, Navigation } from "swiper/modules";
+import Loading from "../components/Loading";
 
 const Home = () => {
 
-    const { newsApi } = useFetch('https://fakestoreapi.com/products')
+    const { newsApi,loading } = useFetch('https://fakestoreapi.com/products')
 
+    if(loading){
+        return(
+            <Loading />
+        )
+    }
 
     return (
         <>
