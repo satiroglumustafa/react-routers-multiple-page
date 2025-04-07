@@ -6,7 +6,7 @@ import { useContext } from "react"
 import NewsContext from "../contexts/NewsContext"
 const NewsItem = (props) => {
 
-    const slugCategory = slugify(props.source.name)
+    const slugCategory = slugify(props.category)
     const slugId = slugify(props.title)
 
     const toUrl = `${slugCategory}/${slugId}`
@@ -21,7 +21,7 @@ const NewsItem = (props) => {
         <>
             <Card className="news-card">
                 <div className="cardImg">
-                    <Link to={toUrl} onClick={handleClick}><Card.Img variant="top" src={props.urlToImage} /></Link>
+                    <Link to={toUrl} onClick={handleClick}><Card.Img variant="top" src={props.image} /></Link>
                 </div>
                 <Card.Body>
                     <Card.Title>

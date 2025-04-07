@@ -12,7 +12,7 @@ const useFetch = (url)=>{
                 const apiUrl = await fetch(url);
                 const apiJson = await apiUrl.json(apiUrl)
                 setLoading(false)
-                setNewsApi(apiJson.articles || [])
+                setNewsApi(apiJson || [])
             } catch (error) {
  
                 setNewsApi([]);

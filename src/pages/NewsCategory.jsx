@@ -6,7 +6,7 @@ import useFetch from "../hooks/useFetch"
 
 const NewsCategory = ()=> {
 
-   const {newsApi,loading} = useFetch('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=773278255af346a7b0e56bc6fd67bd60')
+   const {newsApi,loading} = useFetch('https://fakestoreapi.com/products')
 
     if(loading){
         return(

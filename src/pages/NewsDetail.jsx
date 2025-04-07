@@ -22,9 +22,9 @@ const NewsDetail = () => {
                 <div className="newsContent">
                     <h1 className="text-center mb-4">{selectedNews.title}</h1>
                     <div className="news-content-img">
-                        <img src={selectedNews.urlToImage} fluid alt="" />
+                        <img src={selectedNews.image} fluid alt="" />
                     </div>
-                    <p>{selectedNews.content}</p>
+                    <p>{selectedNews.description}</p>
                 </div>
             </Col>
         </>

@@ -8,7 +8,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 
 const Home = () => {
 
-    const { newsApi } = useFetch('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=773278255af346a7b0e56bc6fd67bd60')
+    const { newsApi } = useFetch('https://fakestoreapi.com/products')
 
 
     return (
@@ -32,7 +32,7 @@ const Home = () => {
                                     <div className="slider-headline">
                                         <figure>
                                             <picture className="img">
-                                                <img src={swiperItem.urlToImage} alt="" />
+                                                <img src={swiperItem.image} alt="" />
                                             </picture>
                                             <figcaption className="detail">
                                                 {
