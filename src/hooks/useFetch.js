@@ -12,10 +12,14 @@ const useFetch = (url)=>{
                 const apiUrl = await fetch(url);
                 const apiJson = await apiUrl.json(apiUrl)
                 setLoading(false)
-                setNewsApi(apiJson.articles)
+                setNewsApi(apiJson.articles || [])
             } catch (error) {
-                setLoading(true)
-                console.error('veri çekilemedi')
+ 
+                setNewsApi([]);
+                console.error('veri çekilemedi',error)
+            }
+            finally {
+                setLoading(false);
             }
         }
 

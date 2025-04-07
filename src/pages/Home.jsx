@@ -25,6 +25,7 @@ const Home = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     {
+                       newsApi && (
                         newsApi.map((swiperItem,index) =>
                             <SwiperSlide key={index}>
                                 {
@@ -43,6 +44,7 @@ const Home = () => {
                                 }
                             </SwiperSlide>
                         )
+                       )
                     }
 
 
