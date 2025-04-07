@@ -1,0 +1,52 @@
+.news-card .card-img-top {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.cardImg {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+
+}
+
+
+.news-card .card-body {
+    background: #161616;
+}
+
+.news-card {
+    border: 0;
+    box-shadow: 1px 1px 10px #6b6b6b;
+    overflow: hidden;
+}
+
+.news-card .card-title a, .news-card .card-text a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+
+.news-card .card-text a {
+    -webkit-line-clamp: 3;
+    font-weight: normal;
+    color: #a4a2a2;
+}
+
+.news-card .card-title a {
+    -webkit-line-clamp: 2;
+}
+
+.news-card .card-title a:hover, .news-card .card-text a:hover{
+    color: #f00;
+}

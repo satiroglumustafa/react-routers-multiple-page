@@ -1,0 +1,19 @@
+.news-content-img img {
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.news-content-img {
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.newsContent {
+    max-width: 840px;
+    margin: auto;
+    padding: 20px;
+    background: #1c1c1c;
+    overflow: hidden;
+    border-radius: 20px;
+}
