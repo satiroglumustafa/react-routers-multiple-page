@@ -1,4 +1,4 @@
-import { Button, Card } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 import './NewsItem.css'
 import { Link } from "react-router-dom"
 import { slugify } from "../utils/utils"

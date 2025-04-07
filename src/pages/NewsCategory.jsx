@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+
 import { Col } from "react-bootstrap"
 import News from "../components/News"
 import Loading from "../components/Loading"
