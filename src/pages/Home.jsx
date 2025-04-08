@@ -6,6 +6,8 @@ import useFetch from "../hooks/useFetch";
 import './Home.css'
 import { Autoplay, Navigation } from "swiper/modules";
 import Loading from "../components/Loading";
+import { Link } from "react-router-dom";
+import { slugify } from "../utils/utils";
 
 const Home = () => {
 
@@ -37,13 +39,11 @@ const Home = () => {
                                 {
                                     <div className="slider-headline">
                                         <figure>
-                                            <picture className="img">
-                                                <img src={swiperItem.image} alt="" />
-                                            </picture>
+                                            
+                                            <Link to={`haberler/${slugify(swiperItem.category)}/${slugify(swiperItem.title)}`}><picture className="img"><img src={swiperItem.image} alt="" /></picture></Link>
+                                            
                                             <figcaption className="detail">
-                                                {
-                                                    swiperItem.title
-                                                }
+                                                <Link to={`haberler/${slugify(swiperItem.category)}/${slugify(swiperItem.title)}`}>{swiperItem.title}</Link>
                                             </figcaption>
                                         </figure>
                                     </div>

@@ -3,6 +3,8 @@
     overflow: hidden;
     border-radius: 30px;
     position: relative;
+    max-width: 760px;
+    margin: auto;
 }
 
 .slider-headline img {
@@ -17,7 +19,10 @@
     height: 100%;
     display: block;
 }
-
+.slider-headline .detail a {
+    color: #fff;
+    text-decoration: none;
+}
 .slider-headline .detail {
     position: absolute;
     left: 0;
@@ -27,7 +32,7 @@
     transform: translate(0,-50%);
     padding: 0 70px;
     font-size: 31px;
-    max-width: 50%;
+    max-width: 100%;
 }
 .swiper-button-prev,.swiper-button-next {
     background: rgb(0 0 0 / 82%);
@@ -39,4 +44,14 @@
 .swiper-button-prev:after, .swiper-button-next:after {
     color: #fff;
     font-size: 23px;
+}
+
+@media (max-width:767px){
+    .slider-headline {
+        height: 250px;
+    }
+    
+    .slider-headline .detail {
+        font-size: 21px;
+    }
 }
